@@ -1,0 +1,11 @@
+<h1><%= @dice %>d<%= @sides %></h1>
+<div>
+  <a href="<%= request.fullpath %>">Roll again</a>
+  |
+  <a href="/">Go back home</a>
+</div>
+<ol>
+  <% @rolls.each do |result| %>
+    <li><em>Result</em>: <strong><%= result %></strong></li>
+  <% end %>
+</ol>
